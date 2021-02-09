@@ -62,7 +62,6 @@ void ajusteposinventario() {
     system("cls");
     cout << endl;
     cout << "--Ajuste positivo de Inventario--" << endl;
-    cout << "Ingreso de Productos al Inventario" << endl;
     cout << "**********************************" << endl;
     cout << "Ingrese el codigo del producto: ";
     cin >> codigo;
@@ -100,7 +99,6 @@ void ajusteneginventario() {
     system("cls");
     cout << endl;
     cout << "--Ajuste negativo de Inventario--" << endl;
-    cout << "Salida de Productos del Inventario" << endl;
     cout << "**********************************" << endl;
     cout << "Ingrese el codigo del producto: ";
     cin >> codigo;
