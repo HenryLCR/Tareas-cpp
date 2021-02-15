@@ -11,7 +11,7 @@ void cargarLibros() {
 	libros[0][0] = "Algoritmos"; libros[0][1] = "Juan Carlos Lopes / "; libros[0][2] = "Algoritmos y Programacion (Guia para docentes)";
 	libros[1][0] = "Algoritmos"; libros[1][1] = "Alejandro Santos / ";  libros[1][2] = "Apuntes de Algoritmos y Estructuras de Datos";
 	libros[2][0] = "Algoritmos"; libros[2][1] = "Jorge L. Ortega Arjona / "; libros[2][2] = "Breves Notas sobre Analisis de Algoritmos";
-	libros[3][0] = "Algoritmos"; libros[3][1] = "Gregorio Martín Quetglás,Francisco Toledo Lobo /"; libros[3][2] = "Fundamentos de Informatica y Programacion";
+	libros[3][0] = "Algoritmos"; libros[3][1] = "Gregorio Martin Quetglas,Francisco Toledo / "; libros[3][2] = "Fundamentos de Informatica y Programacion";
 	libros[4][0] = "Algoritmos"; libros[4][1] = "Jorge L. Ortega Arjona / "; libros[4][2] = "Temas selectos de estructuras de datos";
 	libros[5][0] = "Algoritmos"; libros[5][1] = "Eugenia Bahit / "; libros[5][2] = "Teoria sintactico-gramatical de objetos";
 	libros[6][0] = "Base de Datos"; libros[6][1] = ""; libros[6][2] = "Apuntes de Base de Datos 1";
@@ -28,9 +28,9 @@ void cargarLibros() {
 	libros[17][0] = "Metodologias de desarrollo de software"; libros[17][1] = "Henrik Kniberg / "; libros[17][2] = "Scrum y XP desde las trincheras";
 	libros[18][0] = "Miscelaneos"; libros[18][1] = "Jefferson Cabrera / "; libros[18][2] = "97 cosas que todo programador deberia saber";
 	libros[19][0] = "Miscelaneos"; libros[19][1] = ""; libros[19][2] = "Docker";
-	libros[20][0] = "Miscelaneos"; libros[20][1] = "Esteban Manchado Velasquez, Joaquin C, Yeray Darias"; libros[20][2] = "El camino a un mejor programador";
-	libros[21][0] = "Miscelaneos"; libros[21][1] = "José Juan Sánchez Hernández / "; libros[21][2] = "Introduccion a Docker";
-	libros[22][0] = "Miscelaneos"; libros[22][1] = "Alberto García Serrano / "; libros[22][2] = "Programacion de videojuegos SDL";
+	libros[20][0] = "Miscelaneos"; libros[20][1] = "Esteban Manchado Velasquez, Joaquin C, Yeray Darias / "; libros[20][2] = "El camino a un mejor programador";
+	libros[21][0] = "Miscelaneos"; libros[21][1] = "Jose Juan Sanchez Hernández / "; libros[21][2] = "Introduccion a Docker";
+	libros[22][0] = "Miscelaneos"; libros[22][1] = "Alberto Garcia Serrano / "; libros[22][2] = "Programacion de videojuegos SDL";
 	libros[23][0] = "PHP"; libros[23][1] = "Eugenia Bahit / "; libros[23][2] = "Manual de estudio introductorio al lenguaje PHP procedural";
 	libros[24][0] = "PHP"; libros[24][1] = "Diego Lazaro / "; libros[24][2] = "PHP y Programacion orientada a objetos";
 	libros[25][0] = "PHP"; libros[25][1] = "Eugenia Bahit / "; libros[25][2] = "POO y MVC en PHP";
@@ -41,7 +41,7 @@ void cargarLibros() {
 	libros[30][0] = "Python"; libros[30][1] = "Jason R. Briggs / ";libros[30][2] = "Doma de Serpientes para Ninos: Aprendiendo a Programar con Python";
 	libros[31][0] = "Python"; libros[31][1] = "Mark Pilgrim / "; libros[31][2] = "Inmersion en Python";
 	libros[32][0] = "Python"; libros[32][1] = "Mark Pilgrim / ";libros[32][2] = "Inmersion en Python 3";
-	libros[33][0] = "Python"; libros[33][1] = "Andrés Marzal,Isabel Gracia / ";libros[33][2] = "Introduccion a la programacion con Python";
+	libros[33][0] = "Python"; libros[33][1] = "Andres Marzal,Isabel Gracia / ";libros[33][2] = "Introduccion a la programacion con Python";
 	libros[34][0] = "Python"; libros[34][1] = "Allen Downey, Jeffrey Elkner, Chris Meyers / ";libros[34][2] = "Introduccion a Programando con Python";
 	libros[35][0] = "Python"; libros[35][1] = "Magnus Lie Hetland / ";libros[35][2] = "Python instantaneo (1999)";
 	libros[36][0] = "Python"; libros[36][1] = "Miguel Angel Suarez Ledo / ";libros[36][2] = "Python para ciencia e ingenieria";
@@ -62,6 +62,7 @@ int main(int argc, char const *argv[])
     {
         string buscar = "";
         system("cls");
+        cout << "------Biblioteca-------"<< endl;
         cout << "Ingrese la descripcion del libro que busca: ";
         cin >> buscar;
 
