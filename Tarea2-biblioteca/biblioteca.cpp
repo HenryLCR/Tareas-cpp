@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
         string buscar = "";
         system("cls");
         cout << "------Biblioteca-------"<< endl;
-        cout << "Ingrese la descripcion del libro que busca: ";
+        cout << "Ingrese el nombre del autor o la descripcion del libro que busca: ";
         cin >> buscar;
 
         // busqueda
@@ -94,6 +94,7 @@ int main(int argc, char const *argv[])
                 cout << " Sugerencia 1: " << libros[sugerencia1][1]<< libros[sugerencia1][2]<< endl;
                 cout << " Sugerencia 2: " << libros[sugerencia2][1]<< libros[sugerencia2][2]<< endl;
                 cout << " Sugerencia 3: " << libros[sugerencia3][1]<< libros[sugerencia3][3]<<endl;
+                cout << endl;
 
                 salir = true;
                 break;
