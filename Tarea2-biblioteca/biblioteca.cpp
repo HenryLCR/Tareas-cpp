@@ -68,7 +68,7 @@ int main(int argc, char const *argv[])
         // busqueda
         for (int i = 0; i < 39; i++)
         {
-            string libro = libros[i][1];
+            string libro = libros[i][1], libros[i][2];
             string libroEnminuscula = libro;
             // transformamos a minuscula los string buscar y libro
             transform(libroEnminuscula.begin(), libroEnminuscula.end(), libroEnminuscula.begin(), ::tolower);
