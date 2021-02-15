@@ -68,7 +68,7 @@ int main(int argc, char const *argv[])
         // busqueda
         for (int i = 0; i < 39; i++)
         {
-            string libro = libros[i][1], libros[i][2];
+            string libro = libros[i][1][2];
             string libroEnminuscula = libro;
             // transformamos a minuscula los string buscar y libro
             transform(libroEnminuscula.begin(), libroEnminuscula.end(), libroEnminuscula.begin(), ::tolower);
@@ -83,9 +83,9 @@ int main(int argc, char const *argv[])
                 int sugerencia2 = rand() % 38 + 1;
                 int sugerencia3 = rand() % 38 + 1;
 
-                cout << " Sugerencia 1: " << libros[sugerencia1][1]<< endl;
-                cout << " Sugerencia 2: " << libros[sugerencia2][1] << endl;
-                cout << " Sugerencia 3: " << libros[sugerencia3][1]<< endl;
+                cout << " Sugerencia 1: " << libros[sugerencia1][1]<< libros[sugerencia1][2]<< endl;
+                cout << " Sugerencia 2: " << libros[sugerencia2][1]<< libros[sugerencia2][2]<< endl;
+                cout << " Sugerencia 3: " << libros[sugerencia3][1]<< libros[sugerencia3][3]<<endl;
 
                 salir = true;
                 break;
