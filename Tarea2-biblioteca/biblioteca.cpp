@@ -4,20 +4,20 @@
 
 using namespace std;
 
-string libros[39][2];
+string libros[39][3];
 
 void cargarLibros() {
     // Arreglo con categoria y descripcion
-	libros[0][0] = "Algoritmos"; libros[0][1] = "Algoritmos y Programacion (Guia para docentes)";
-	libros[1][0] = "Algoritmos"; libros[1][1] = "Apuntes de Algoritmos y Estructuras de Datos";
-	libros[2][0] = "Algoritmos"; libros[2][1] = "Breves Notas sobre Analisis de Algoritmos";
-	libros[3][0] = "Algoritmos"; libros[3][1] = "Fundamentos de Informatica y Programacion";
-	libros[4][0] = "Algoritmos"; libros[4][1] = "Temas selectos de estructuras de datos";
-	libros[5][0] = "Algoritmos"; libros[5][1] = "Teoria sintactico-gramatical de objetos";
-	libros[6][0] = "Base de Datos"; libros[6][1] = "Apuntes de Base de Datos 1";
-	libros[7][0] = "Base de Datos"; libros[7][1] = "Base de Datos (2005)";
-	libros[8][0] = "Base de Datos"; libros[8][1] = "Base de Datos (2011)";
-	libros[9][0] = "Base de Datos"; libros[9][1] = "Base de Datos Avanzadas (2013)";
+	libros[0][0] = "Algoritmos"; libros[0][1] = "Juan Carlos Lopes"; libros[0][2] = "Algoritmos y Programacion (Guia para docentes)";
+	libros[1][0] = "Algoritmos"; libros[1][1] = "Alejandro Santos";  libros[1][2] = "Apuntes de Algoritmos y Estructuras de Datos";
+	libros[2][0] = "Algoritmos"; libros[2][1] = "Jorge L. Ortega Arjona"; libros[2][2] = "Breves Notas sobre Analisis de Algoritmos";
+	libros[3][0] = "Algoritmos"; libros[3][1] = "Gregorio Martín Quetglás,Francisco Toledo Lobo"; libros[3][2] = "Fundamentos de Informatica y Programacion";
+	libros[4][0] = "Algoritmos"; libros[4][1] = "Jorge L. Ortega Arjona"; libros[4][2] = "Temas selectos de estructuras de datos";
+	libros[5][0] = "Algoritmos"; libros[5][1] = "Eugenia Bahit"; libros[5][2] = "Teoria sintactico-gramatical de objetos";
+	libros[6][0] = "Base de Datos"; libros[6][1] = ""; libros[6][2] = "Apuntes de Base de Datos 1";
+	libros[7][0] = "Base de Datos"; libros[7][1] = "Solid Quality Learning"; libros[7][2] = "Base de Datos (2005)";
+	libros[8][0] = "Base de Datos"; libros[8][1] = "Mercedes Marques"; libros[8][2] = "Base de Datos (2011)";
+	libros[9][0] = "Base de Datos"; libros[9][1] = "Aramburu & Sanz Blasco "; libros[9][2] = "Base de Datos Avanzadas (2013)";
 	libros[10][0] = "Base de Datos"; libros[10][1] = "Diseno Conceptual de Bases de Datos";
 	libros[11][0] = "Ciencia Computacional"; libros[11][1] = "Breves Notas sobre Automatas y Lenguajes";
 	libros[12][0] = "Ciencia Computacional"; libros[12][1] = "Breves Notas sobre Teoria de la Computacion";
