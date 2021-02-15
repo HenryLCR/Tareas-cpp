@@ -82,7 +82,8 @@ int main(int argc, char const *argv[])
             transform(buscar.begin(), buscar.end(), buscar.begin(), ::tolower);
 
             if (libroEnminuscula.find(buscar) != string::npos) {
-                cout << "Libro encontrado: " << libro << libr << endl;
+                cout << endl;
+                cout << "Libro encontrado: " << libro << libr << endl << endl;
 
                 cout << "Tambien te sugerimos estos libros: " << endl;
 
