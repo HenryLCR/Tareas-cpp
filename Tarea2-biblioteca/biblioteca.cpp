@@ -69,22 +69,19 @@ int main(int argc, char const *argv[])
         // busqueda
         for (int i = 0; i < 39; i++)
         {
-            string libro = libros[i][1];
+             string autor = libros[i][1];
+            string libro = libros[i][2];
+            string autorEnminuscula = autor;
             string libroEnminuscula = libro;
             // transformamos a minuscula los string buscar por autor
+            transform(autorEnminuscula.begin(), autorEnminuscula.end(), autorEnminuscula.begin(), ::tolower);
             transform(libroEnminuscula.begin(), libroEnminuscula.end(), libroEnminuscula.begin(), ::tolower);
             transform(buscar.begin(), buscar.end(), buscar.begin(), ::tolower);
             
-            string libr = libros[i][2];
-            string librEnminuscula = libr;
-            // transformamos a minuscula los string buscar y libro
-            transform(librEnminuscula.begin(), librEnminuscula.end(), librEnminuscula.begin(), ::tolower);
-            transform(buscar.begin(), buscar.end(), buscar.begin(), ::tolower);
 
-
-            if ((libroEnminuscula.find(buscar) != string::npos) ||(librEnminuscula.find(buscar) != string::npos)) {
+            if (autorEnminuscula.find(buscar) != string::npos || libroEnminuscula.find(buscar) != string::npos) {
                 cout << endl;
-                cout << "Libro encontrado: " << libro << libr << endl << endl;
+                cout << "Libro encontrado: " << autor << libro << endl << endl;
 
                 cout << "Tambien te sugerimos estos libros: " << endl;
 
