@@ -14,7 +14,7 @@ void cargarLibros() {
 	libros[3][0] = "Algoritmos"; libros[3][1] = "Gregorio Martin Quetglas,Francisco Toledo / "; libros[3][2] = "Fundamentos de Informatica y Programacion";
 	libros[4][0] = "Algoritmos"; libros[4][1] = "Jorge L. Ortega Arjona / "; libros[4][2] = "Temas selectos de estructuras de datos";
 	libros[5][0] = "Algoritmos"; libros[5][1] = "Eugenia Bahit / "; libros[5][2] = "Teoria sintactico-gramatical de objetos";
-	libros[6][0] = "Base de Datos"; libros[6][1] = ""; libros[6][2] = "Apuntes de Base de Datos 1";
+	libros[6][0] = "Base de Datos"; libros[6][1] = "/ "; libros[6][2] = "Apuntes de Base de Datos 1";
 	libros[7][0] = "Base de Datos"; libros[7][1] = "Solid Quality Learning / "; libros[7][2] = "Base de Datos (2005)";
 	libros[8][0] = "Base de Datos"; libros[8][1] = "Mercedes Marques / "; libros[8][2] = "Base de Datos (2011)";
 	libros[9][0] = "Base de Datos"; libros[9][1] = "Aramburu & Sanz Blasco / "; libros[9][2] = "Base de Datos Avanzadas (2013)";
@@ -27,7 +27,7 @@ void cargarLibros() {
 	libros[16][0] = "Metodologias de desarrollo de software"; libros[16][1] = "Eugenia Bahit / "; libros[16][2] = "Scrum & Extreme Programming (para programadores)";
 	libros[17][0] = "Metodologias de desarrollo de software"; libros[17][1] = "Henrik Kniberg / "; libros[17][2] = "Scrum y XP desde las trincheras";
 	libros[18][0] = "Miscelaneos"; libros[18][1] = "Jefferson Cabrera / "; libros[18][2] = "97 cosas que todo programador deberia saber";
-	libros[19][0] = "Miscelaneos"; libros[19][1] = ""; libros[19][2] = "Docker";
+	libros[19][0] = "Miscelaneos"; libros[19][1] = "/ "; libros[19][2] = "Docker";
 	libros[20][0] = "Miscelaneos"; libros[20][1] = "Esteban Manchado Velasquez, Joaquin C, Yeray Darias / "; libros[20][2] = "El camino a un mejor programador";
 	libros[21][0] = "Miscelaneos"; libros[21][1] = "Jose Juan Sanchez Hernández / "; libros[21][2] = "Introduccion a Docker";
 	libros[22][0] = "Miscelaneos"; libros[22][1] = "Alberto Garcia Serrano / "; libros[22][2] = "Programacion de videojuegos SDL";
@@ -69,19 +69,20 @@ int main(int argc, char const *argv[])
         // busqueda
         for (int i = 0; i < 39; i++)
         {
-            string libro = libros[i][1];
-            string libroEnminuscula = libro;
-            // transformamos a minuscula los string buscar y libro
-            transform(libroEnminuscula.begin(), libroEnminuscula.end(), libroEnminuscula.begin(), ::tolower);
+            string autor = libros[i][1];
+            string autorEnminuscula = autor;
+            // transformamos a minuscula los string buscar por autor
+            transform(autorEnminuscula.begin(), autorEnminuscula.end(), libroEnminuscula.begin(), ::tolower);
             transform(buscar.begin(), buscar.end(), buscar.begin(), ::tolower);
-
+            
             string libr = libros[i][2];
             string librEnminuscula = libr;
             // transformamos a minuscula los string buscar y libro
             transform(librEnminuscula.begin(), librEnminuscula.end(), librEnminuscula.begin(), ::tolower);
             transform(buscar.begin(), buscar.end(), buscar.begin(), ::tolower);
 
-            if (libroEnminuscula.find(buscar) != string::npos) {
+
+            if ((libroEnminuscula.find(buscar) != string::npos) ||(librEnminuscula.find(buscar) != string::npos)) {
                 cout << endl;
                 cout << "Libro encontrado: " << libro << libr << endl << endl;
 
