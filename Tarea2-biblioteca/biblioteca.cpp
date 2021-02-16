@@ -91,7 +91,7 @@ int main(int argc, char const *argv[])
 
                 cout << " Sugerencia 1: " << libros[sugerencia1][1]<< libros[sugerencia1][2]<< endl;
                 cout << " Sugerencia 2: " << libros[sugerencia2][1]<< libros[sugerencia2][2]<< endl;
-                cout << " Sugerencia 3: " << libros[sugerencia3][1]<< libros[sugerencia3][3]<<endl;
+                cout << " Sugerencia 3: " << libros[sugerencia3][1]<< libros[sugerencia3][2]<<endl;
                 cout << endl;
 
                 salir = true;
